@@ -4,7 +4,7 @@ describe("Game", () => {
     game = new Game();
   });
 
-  // it("has an array", () => {
-  //   expect(typeof(board.array)).toBe("object");
-  // });
+  it("starts with a new player", () => {
+    expect(typeof(game.player)).toBe("object");
+  });
 });
