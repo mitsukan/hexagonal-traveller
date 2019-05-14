@@ -1,1 +1,1 @@
-class Tile extends Player{}
+class Tile{}
