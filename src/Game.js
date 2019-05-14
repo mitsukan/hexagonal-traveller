@@ -1,7 +1,7 @@
 class Game extends Board {
-constructor (player){
-  super();
-this._player = new Player();
+  constructor (player){
+    super();
+    this._player = new Player();
 
-}
+  }
 }
