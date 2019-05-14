@@ -4,7 +4,7 @@ describe("Tile", () => {
     tile = new Tile();
   });
 
-  // it("has an array", () => {
-  //   expect(typeof(board.array)).toBe("object");
-  // });
+  it("has a spot for the player", () => {
+    expect(tile.chair).toEqual([]);
+  });
 });
