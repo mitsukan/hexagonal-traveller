@@ -2,20 +2,22 @@ class Board{
   constructor() {
     this._array = [[new Tile(), new Tile()],[new Tile(), new Tile(), new Tile()],[new Tile(), new Tile()]];
     this._rS = new Array(2);
+    this.rollFirstIndex();
+    this.rollSecondIndex();
   }
 
   get array() {
     return this._array;
   }
 
+  get rS() {
+    return this._rS;
+  }
+
   // get randomStart(){
   //   return this._randomStart;
   // }
 
-  randomStart(){
-    this.rollFirstIndex();
-    this.rollSecondIndex();
-  }
 
   rollFirstIndex() {
     this._rS[0]=Math.floor(Math.random()*(2-0+1));

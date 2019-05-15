@@ -1,5 +1,5 @@
 class Game extends Board {
-  constructor (player){
+  constructor (){
     super();
     this._player = new Player();
   }
@@ -7,4 +7,5 @@ class Game extends Board {
   get player(){
     return this._player;
   }
+
 }
