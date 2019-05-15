@@ -1,9 +1,18 @@
 class Tile{
-  constructor(chair){
-    this._chair = [];
+  constructor(){
+    this._player = undefined;
   }
 
-  get chair() {
-    return this._chair;
+  get player() {
+    return this._player;
+  }
+
+  set player(player) {
+    this._player = player;
+  }
+
+  takePlayer(player){
+    this.player = player;
+    this.player.tile = this;
   }
 }

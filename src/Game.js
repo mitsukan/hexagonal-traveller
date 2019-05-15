@@ -1,6 +1,7 @@
 class Game extends Board {
   constructor (){
     super();
+    this._player = new Player;
     this.randomStart();
   }
 
@@ -8,8 +9,16 @@ class Game extends Board {
     return this._player;
   }
 
+  set player(player) {
+    this._player = player;
+  }
+
   randomStart(){
-    this._array[this._rS[0]][this._rS[1]].chair.push(new Player);
+    this._array[this._p1[0]][this._p1[1]].takePlayer(this.player);
+  }
+
+  movePlayer(i0,i1){
+  this.player.moveTo(this._array[i0][i1]);
   }
 
 }
