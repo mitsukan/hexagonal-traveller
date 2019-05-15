@@ -14,11 +14,6 @@ class Board{
     return this._rS;
   }
 
-  // get randomStart(){
-  //   return this._randomStart;
-  // }
-
-
   rollFirstIndex() {
     this._rS[0]=Math.floor(Math.random()*(2-0+1));
   }
